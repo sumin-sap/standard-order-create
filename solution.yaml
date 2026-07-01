@@ -1,0 +1,10 @@
+apiVersion: solution.sap/v1
+kind: Solution
+
+metadata:
+  name: standard-order-delivery-block-b1905
+  version: 1.0.0
+  description: Standard Order 생성 및 Delivery Block 사전 예측 AI 에이전트 — SAP S/4HANA 연동으로 주문 생성 시 RPT-1 AI 모델로 배송 차단 위험을 사전 예측하고 경고를 제공합니다.
+
+assets:
+  - ref: ./assets/standard-order-delivery-block-agent/asset.yaml

@@ -1,0 +1,188 @@
+{
+  "summary": {
+    "total": 29,
+    "passed": 29,
+    "failed": 0,
+    "score": 100.0
+  },
+  "sections": [
+    {
+      "name": "Structure Tests",
+      "marker": "structure",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "score": 100.0,
+      "tests": [
+        {
+          "name": "test_agent_directory_exists",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_app_directory_exists",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_requirements_txt_exists",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_agent_py_exists",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_main_py_exists",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_mcp_tools_py_exists",
+          "outcome": "passed",
+          "duration": 0.0002
+        }
+      ]
+    },
+    {
+      "name": "Server Tests",
+      "marker": "server",
+      "total": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "score": 0.0,
+      "tests": []
+    },
+    {
+      "name": "Agent Tests",
+      "marker": "agent_tests",
+      "total": 23,
+      "passed": 23,
+      "failed": 0,
+      "skipped": 0,
+      "score": 100.0,
+      "tests": [
+        {
+          "name": "test_agent_model_decorator_present",
+          "outcome": "passed",
+          "duration": 3.3646
+        },
+        {
+          "name": "test_agent_config_decorator_present",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_prompt_section_decorator_present",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_exactly_three_decorated_functions",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_temperature_is_deterministic",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_system_prompt_is_korean",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_sample_agent_class_exists",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_high_risk_threshold_constant",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_thresholds_in_agent",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_successful_order_creation_via_mock_mcp",
+          "outcome": "passed",
+          "duration": 0.0105
+        },
+        {
+          "name": "test_failure_path_when_no_mcp_tools",
+          "outcome": "passed",
+          "duration": 0.0007
+        },
+        {
+          "name": "test_result_structure_on_success",
+          "outcome": "passed",
+          "duration": 0.0013
+        },
+        {
+          "name": "test_returns_delivery_block_reason",
+          "outcome": "passed",
+          "duration": 0.0011
+        },
+        {
+          "name": "test_fallback_when_no_mcp_tools",
+          "outcome": "passed",
+          "duration": 0.001
+        },
+        {
+          "name": "test_result_contains_required_fields",
+          "outcome": "passed",
+          "duration": 0.0007
+        },
+        {
+          "name": "test_low_risk_order",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_high_risk_credit_exceeded",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_medium_risk_credit_warning",
+          "outcome": "passed",
+          "duration": 0.0003
+        },
+        {
+          "name": "test_predict_tool_invocable",
+          "outcome": "passed",
+          "duration": 0.0006
+        },
+        {
+          "name": "test_risk_thresholds",
+          "outcome": "passed",
+          "duration": 0.0002
+        },
+        {
+          "name": "test_fallback_when_no_mcp_tools",
+          "outcome": "passed",
+          "duration": 0.0009
+        },
+        {
+          "name": "test_fallback_returns_valid_result",
+          "outcome": "passed",
+          "duration": 0.0006
+        },
+        {
+          "name": "test_simulate_extracts_credit_check",
+          "outcome": "passed",
+          "duration": 0.0006
+        }
+      ],
+      "coverage": 42.41
+    }
+  ]
+}

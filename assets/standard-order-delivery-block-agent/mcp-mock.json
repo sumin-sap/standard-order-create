@@ -1,0 +1,74 @@
+{
+  "servers": {
+    "sales-order-mcp": {
+      "tools": {
+        "create_a_sales_order": {
+          "description": "Creates a Standard Sales Order (OR) in SAP S/4HANA",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "SalesOrderType": {"type": "string", "description": "Order type, e.g. OR"},
+              "SoldToParty": {"type": "string", "description": "Customer code"},
+              "SalesOrganization": {"type": "string", "description": "Sales org code"},
+              "DistributionChannel": {"type": "string", "description": "Distribution channel"},
+              "OrganizationDivision": {"type": "string", "description": "Division"}
+            },
+            "required": ["SalesOrderType", "SoldToParty", "SalesOrganization", "DistributionChannel", "OrganizationDivision"]
+          },
+          "mock_response": {
+            "SalesOrder": "0000005001",
+            "SalesOrderType": "OR",
+            "SoldToParty": "0000001000",
+            "SalesOrganization": "1710",
+            "DistributionChannel": "10",
+            "OrganizationDivision": "00",
+            "CreationDate": "/Date(1751347200000)/",
+            "OverallSDProcessStatus": "A"
+          }
+        },
+        "get_a_sales_order": {
+          "description": "Retrieves a Sales Order by number",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "SalesOrder": {"type": "string", "description": "Sales order number"}
+            },
+            "required": ["SalesOrder"]
+          },
+          "mock_response": {
+            "d": {
+              "SalesOrder": "0000005001",
+              "DeliveryBlockReason": "",
+              "OverallDeliveryStatus": "A",
+              "OverallSDProcessStatus": "A"
+            }
+          }
+        }
+      }
+    },
+    "sales-order-simulate-mcp": {
+      "tools": {
+        "simulate_a_sales_order": {
+          "description": "Simulates a sales order for validation before creation",
+          "input_schema": {
+            "type": "object",
+            "properties": {
+              "SalesOrderType": {"type": "string", "description": "Order type"},
+              "SoldToParty": {"type": "string", "description": "Customer code"},
+              "SalesOrganization": {"type": "string", "description": "Sales org"},
+              "DistributionChannel": {"type": "string", "description": "Distribution channel"},
+              "OrganizationDivision": {"type": "string", "description": "Division"}
+            },
+            "required": ["SalesOrderType", "SoldToParty", "SalesOrganization", "DistributionChannel", "OrganizationDivision"]
+          },
+          "mock_response": {
+            "CreditCheckPassed": true,
+            "AvailabilityOk": true,
+            "EstimatedDeliveryDate": "2026-08-01",
+            "messages": []
+          }
+        }
+      }
+    }
+  }
+}
