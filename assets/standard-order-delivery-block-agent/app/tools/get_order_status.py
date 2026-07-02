@@ -25,16 +25,26 @@ async def _get_order_status(SalesOrder: str) -> dict:
         from mcp_tools import get_mcp_tools, get_user_token
         tok = get_user_token()
         tools = await get_mcp_tools(tok)
+        # Primary: look for exact MCP tool name from translation.json
+        GET_TOOL_NAME = "get_a_salesorder_for_api_sales_order_srv"
+        get_tool = None
         for tool in tools:
-            tool_lower = tool.name.lower()
-            if ("sales_order" in tool_lower or "salesorder" in tool_lower) and (
-                "get" in tool_lower or "read" in tool_lower or "list" in tool_lower
-            ):
+            if tool.name == GET_TOOL_NAME:
                 get_tool = tool
                 break
+        # Fallback: fuzzy match
+        if not get_tool:
+            for tool in tools:
+                tool_lower = tool.name.lower()
+                if ("sales_order" in tool_lower or "salesorder" in tool_lower) and (
+                    "get" in tool_lower
+                ) and "simulat" not in tool_lower:
+                    get_tool = tool
+                    break
 
         if get_tool:
-            raw_result = await get_tool.ainvoke({"SalesOrder": SalesOrder})
+            # Use lowercase parameter name as per translation.json newParameterName mapping
+            raw_result = await get_tool.ainvoke({"salesorder": SalesOrder})
             try:
                 result_data = json.loads(raw_result) if isinstance(raw_result, str) else raw_result
             except Exception:

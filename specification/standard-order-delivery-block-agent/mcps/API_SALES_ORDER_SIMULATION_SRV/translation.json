@@ -1,0 +1,2069 @@
+{
+  "mcpTranslationVersion": "0.1",
+  "target": {
+    "ordId": "sap.s4:apiResource:API_SALES_ORDER_SIMULATION_SRV:v1",
+    "type": "edmx"
+  },
+  "serverInfo": {
+    "name": "sap.mcp/api_sales_order_simulation_srv",
+    "title": "api_sales_order_simulation_srv",
+    "version": "1.0.0",
+    "description": "MCP server for the api_sales_order_simulation_srv service."
+  },
+  "tools": [
+    {
+      "name": "get_metadata_api_sales_order_simulation_srv",
+      "title": "get_metadata_api_sales_order_simulation_srv",
+      "description": "Get metadata of the OData service with optional filtering to reduce token consumption.\nReturns the metadata in XML format, which can be used to discover available entities and their properties.\nCall this endpoint every time before you call other tools to ensure understanding of the schema.\nBased on the metadata, you can dynamically create an OData request.\n\nUse filtering parameters to get specific metadata sections. Without parameters, this tool returns the complete XML metadata (which might be huge).\nOnly use the specified enum values for the filtering parameters.\n",
+      "odataType": {
+        "metadataRequest": {}
+      }
+    },
+    {
+      "name": "batch_for_api_sales_order_simulation_srv",
+      "title": "batch_for_api_sales_order_simulation_srv",
+      "description": "Execute multiple OData operations in a single batch request using the $batch endpoint. This allows you to combine multiple tool calls into one HTTP request, improving efficiency when performing multiple operations.",
+      "odataType": {
+        "batchRequest": {}
+      }
+    },
+    {
+      "name": "list_a_salesordercreditsimulation_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderCreditSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderCreditSimulation collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderCreditSimulation",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesordercreditsimulation_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderCreditSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderCreditSimulation collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderCreditSimulation",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesordercreditsimulation_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderCreditSimulation_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderCreditSimulation collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderCreditSimulation",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_salesorderitempartnersimln_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderItemPartnerSimln_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderItemPartnerSimln collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemPartnerSimln",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesorderitempartnersimln_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderItemPartnerSimln_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderItemPartnerSimln collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemPartnerSimln",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "PartnerFunction",
+              "newParameterName": "partnerfunction"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesorderitempartnersimln_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderItemPartnerSimln_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderItemPartnerSimln collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemPartnerSimln",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderItemSimulation collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderItemSimulation collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderItemSimulation collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_salesorderitmprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderItmPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderItmPrcgElmntSimln collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItmPrcgElmntSimln",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesorderitmprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderItmPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderItmPrcgElmntSimln collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItmPrcgElmntSimln",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "PricingProcedureStep",
+              "newParameterName": "pricingprocedurestep"
+            },
+            {
+              "name": "PricingProcedureCounter",
+              "newParameterName": "pricingprocedurecounter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesorderitmprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderItmPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderItmPrcgElmntSimln collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItmPrcgElmntSimln",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_salesorderpartnersimulation_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderPartnerSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderPartnerSimulation collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPartnerSimulation",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesorderpartnersimulation_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderPartnerSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderPartnerSimulation collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPartnerSimulation",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "PartnerFunction",
+              "newParameterName": "partnerfunction"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesorderpartnersimulation_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderPartnerSimulation_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderPartnerSimulation collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPartnerSimulation",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_salesorderprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderPrcgElmntSimln collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPrcgElmntSimln",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesorderprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderPrcgElmntSimln collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPrcgElmntSimln",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "PricingProcedureStep",
+              "newParameterName": "pricingprocedurestep"
+            },
+            {
+              "name": "PricingProcedureCounter",
+              "newParameterName": "pricingprocedurecounter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesorderprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderPrcgElmntSimln collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPrcgElmntSimln",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_salesorderpricingsimulation_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderPricingSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderPricingSimulation collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPricingSimulation",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesorderpricingsimulation_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderPricingSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderPricingSimulation collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPricingSimulation",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesorderpricingsimulation_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderPricingSimulation_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderPricingSimulation collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPricingSimulation",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_salesorderschedulelinesimln_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderScheduleLineSimln_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderScheduleLineSimln collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderScheduleLineSimln",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesorderschedulelinesimln_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderScheduleLineSimln_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderScheduleLineSimln collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderScheduleLineSimln",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "ScheduleLine",
+              "newParameterName": "scheduleline"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesorderschedulelinesimln_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderScheduleLineSimln_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderScheduleLineSimln collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderScheduleLineSimln",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "list_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SalesOrderSimulation collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "create_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "create_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Create a new instance of the A_SalesOrderSimulation EntitySet in the api_sales_order_simulation_srv service. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "crudOperation": "create",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderType",
+              "newParameterName": "salesordertype"
+            },
+            {
+              "name": "SalesOrganization",
+              "newParameterName": "salesorganization"
+            },
+            {
+              "name": "DistributionChannel",
+              "newParameterName": "distributionchannel"
+            },
+            {
+              "name": "OrganizationDivision",
+              "newParameterName": "organizationdivision"
+            },
+            {
+              "name": "SalesGroup",
+              "newParameterName": "salesgroup"
+            },
+            {
+              "name": "SalesOffice",
+              "newParameterName": "salesoffice"
+            },
+            {
+              "name": "SalesDistrict",
+              "newParameterName": "salesdistrict"
+            },
+            {
+              "name": "SoldToParty",
+              "newParameterName": "soldtoparty"
+            },
+            {
+              "name": "CustomerGroup",
+              "newParameterName": "customergroup"
+            },
+            {
+              "name": "AdditionalCustomerGroup1",
+              "newParameterName": "additionalcustomergroup1"
+            },
+            {
+              "name": "AdditionalCustomerGroup2",
+              "newParameterName": "additionalcustomergroup2"
+            },
+            {
+              "name": "AdditionalCustomerGroup3",
+              "newParameterName": "additionalcustomergroup3"
+            },
+            {
+              "name": "AdditionalCustomerGroup4",
+              "newParameterName": "additionalcustomergroup4"
+            },
+            {
+              "name": "AdditionalCustomerGroup5",
+              "newParameterName": "additionalcustomergroup5"
+            },
+            {
+              "name": "PurchaseOrderByCustomer",
+              "newParameterName": "purchaseorderbycustomer"
+            },
+            {
+              "name": "CustomerPurchaseOrderType",
+              "newParameterName": "customerpurchaseordertype"
+            },
+            {
+              "name": "CustomerPurchaseOrderDate",
+              "newParameterName": "customerpurchaseorderdate"
+            },
+            {
+              "name": "SalesOrderDate",
+              "newParameterName": "salesorderdate"
+            },
+            {
+              "name": "TransactionCurrency",
+              "newParameterName": "transactioncurrency"
+            },
+            {
+              "name": "AccountingDocExternalReference",
+              "newParameterName": "accountingdocexternalreference"
+            },
+            {
+              "name": "CustomerTaxClassification1",
+              "newParameterName": "customertaxclassification1"
+            },
+            {
+              "name": "CustomerTaxClassification2",
+              "newParameterName": "customertaxclassification2"
+            },
+            {
+              "name": "CustomerTaxClassification3",
+              "newParameterName": "customertaxclassification3"
+            },
+            {
+              "name": "CustomerTaxClassification4",
+              "newParameterName": "customertaxclassification4"
+            },
+            {
+              "name": "CustomerTaxClassification5",
+              "newParameterName": "customertaxclassification5"
+            },
+            {
+              "name": "CustomerTaxClassification6",
+              "newParameterName": "customertaxclassification6"
+            },
+            {
+              "name": "CustomerTaxClassification7",
+              "newParameterName": "customertaxclassification7"
+            },
+            {
+              "name": "CustomerTaxClassification8",
+              "newParameterName": "customertaxclassification8"
+            },
+            {
+              "name": "CustomerTaxClassification9",
+              "newParameterName": "customertaxclassification9"
+            },
+            {
+              "name": "TaxDepartureCountry",
+              "newParameterName": "taxdeparturecountry"
+            },
+            {
+              "name": "VATRegistrationCountry",
+              "newParameterName": "vatregistrationcountry"
+            },
+            {
+              "name": "PriceListType",
+              "newParameterName": "pricelisttype"
+            },
+            {
+              "name": "CustomerPriceGroup",
+              "newParameterName": "customerpricegroup"
+            },
+            {
+              "name": "SDDocumentReason",
+              "newParameterName": "sddocumentreason"
+            },
+            {
+              "name": "PricingDate",
+              "newParameterName": "pricingdate"
+            },
+            {
+              "name": "RequestedDeliveryDate",
+              "newParameterName": "requesteddeliverydate"
+            },
+            {
+              "name": "ShippingCondition",
+              "newParameterName": "shippingcondition"
+            },
+            {
+              "name": "CompleteDeliveryIsDefined",
+              "newParameterName": "completedeliveryisdefined"
+            },
+            {
+              "name": "ShippingType",
+              "newParameterName": "shippingtype"
+            },
+            {
+              "name": "IncotermsClassification",
+              "newParameterName": "incotermsclassification"
+            },
+            {
+              "name": "IncotermsTransferLocation",
+              "newParameterName": "incotermstransferlocation"
+            },
+            {
+              "name": "IncotermsLocation1",
+              "newParameterName": "incotermslocation1"
+            },
+            {
+              "name": "IncotermsLocation2",
+              "newParameterName": "incotermslocation2"
+            },
+            {
+              "name": "IncotermsVersion",
+              "newParameterName": "incotermsversion"
+            },
+            {
+              "name": "ReferenceSDDocument",
+              "newParameterName": "referencesddocument"
+            },
+            {
+              "name": "CustomerPaymentTerms",
+              "newParameterName": "customerpaymentterms"
+            },
+            {
+              "name": "PaymentMethod",
+              "newParameterName": "paymentmethod"
+            },
+            {
+              "name": "to_Credit",
+              "newParameterName": "to_credit"
+            },
+            {
+              "name": "to_Item",
+              "newParameterName": "to_item"
+            },
+            {
+              "name": "to_Partner",
+              "newParameterName": "to_partner"
+            },
+            {
+              "name": "to_Pricing",
+              "newParameterName": "to_pricing"
+            },
+            {
+              "name": "to_PricingElement",
+              "newParameterName": "to_pricingelement"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "get_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SalesOrderSimulation collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "count_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SalesOrderSimulation collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_a_slsordsimlnvaladdedsrvc_for_api_sales_order_simulation_srv",
+      "title": "list_A_SlsOrdSimlnValAddedSrvc_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a list of entities from the A_SlsOrdSimlnValAddedSrvc collection in the api_sales_order_simulation_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SlsOrdSimlnValAddedSrvc",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "create_a_slsordsimlnvaladdedsrvc_for_api_sales_order_simulation_srv",
+      "title": "create_A_SlsOrdSimlnValAddedSrvc_for_api_sales_order_simulation_srv",
+      "description": "Create a new instance of the A_SlsOrdSimlnValAddedSrvc EntitySet in the api_sales_order_simulation_srv service. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SlsOrdSimlnValAddedSrvc",
+          "crudOperation": "create",
+          "parameters": [
+            {
+              "name": "ValueAddedServiceType",
+              "newParameterName": "valueaddedservicetype"
+            },
+            {
+              "name": "ValueAddedSubServiceType",
+              "newParameterName": "valueaddedsubservicetype"
+            },
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "ValueAddedServiceProduct",
+              "newParameterName": "valueaddedserviceproduct"
+            },
+            {
+              "name": "ValAddedSrvcHasToBeOrdered",
+              "newParameterName": "valaddedsrvchastobeordered"
+            },
+            {
+              "name": "ValAddedSrvcIncrement",
+              "newParameterName": "valaddedsrvcincrement"
+            },
+            {
+              "name": "ValueAddedServiceChargeCode",
+              "newParameterName": "valueaddedservicechargecode"
+            },
+            {
+              "name": "ValAddedSrvcIsRlvtForProcmt",
+              "newParameterName": "valaddedsrvcisrlvtforprocmt"
+            },
+            {
+              "name": "ValueAddedServiceText1",
+              "newParameterName": "valueaddedservicetext1"
+            },
+            {
+              "name": "ValueAddedServiceText2",
+              "newParameterName": "valueaddedservicetext2"
+            },
+            {
+              "name": "ValueAddedServiceText3",
+              "newParameterName": "valueaddedservicetext3"
+            },
+            {
+              "name": "ValueAddedServiceLongText",
+              "newParameterName": "valueaddedservicelongtext"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "update_a_slsordsimlnvaladdedsrvc_for_api_sales_order_simulation_srv",
+      "title": "update_A_SlsOrdSimlnValAddedSrvc_for_api_sales_order_simulation_srv",
+      "description": "Update an entity in A_SlsOrdSimlnValAddedSrvc EntitySet in the api_sales_order_simulation_srv service. Provide the key properties to identify the entity and the properties to update in the request body. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SlsOrdSimlnValAddedSrvc",
+          "crudOperation": "update",
+          "parameters": [
+            {
+              "name": "ValueAddedServiceType",
+              "newParameterName": "valueaddedservicetype"
+            },
+            {
+              "name": "ValueAddedSubServiceType",
+              "newParameterName": "valueaddedsubservicetype"
+            },
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "ValueAddedServiceProduct",
+              "newParameterName": "valueaddedserviceproduct"
+            },
+            {
+              "name": "ValAddedSrvcHasToBeOrdered",
+              "newParameterName": "valaddedsrvchastobeordered"
+            },
+            {
+              "name": "ValAddedSrvcIncrement",
+              "newParameterName": "valaddedsrvcincrement"
+            },
+            {
+              "name": "ValueAddedServiceChargeCode",
+              "newParameterName": "valueaddedservicechargecode"
+            },
+            {
+              "name": "ValAddedSrvcIsRlvtForProcmt",
+              "newParameterName": "valaddedsrvcisrlvtforprocmt"
+            },
+            {
+              "name": "ValueAddedServiceText1",
+              "newParameterName": "valueaddedservicetext1"
+            },
+            {
+              "name": "ValueAddedServiceText2",
+              "newParameterName": "valueaddedservicetext2"
+            },
+            {
+              "name": "ValueAddedServiceText3",
+              "newParameterName": "valueaddedservicetext3"
+            },
+            {
+              "name": "ValueAddedServiceLongText",
+              "newParameterName": "valueaddedservicelongtext"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "delete_a_slsordsimlnvaladdedsrvc_for_api_sales_order_simulation_srv",
+      "title": "delete_A_SlsOrdSimlnValAddedSrvc_for_api_sales_order_simulation_srv",
+      "description": "Delete an entity from A_SlsOrdSimlnValAddedSrvc EntitySet in the api_sales_order_simulation_srv service.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SlsOrdSimlnValAddedSrvc",
+          "crudOperation": "delete",
+          "parameters": [
+            {
+              "name": "ValueAddedServiceType",
+              "newParameterName": "valueaddedservicetype"
+            },
+            {
+              "name": "ValueAddedSubServiceType",
+              "newParameterName": "valueaddedsubservicetype"
+            },
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_a_slsordsimlnvaladdedsrvc_for_api_sales_order_simulation_srv",
+      "title": "get_A_SlsOrdSimlnValAddedSrvc_for_api_sales_order_simulation_srv",
+      "description": "Retrieve a single entity by its key from the A_SlsOrdSimlnValAddedSrvc collection in the api_sales_order_simulation_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SlsOrdSimlnValAddedSrvc",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "ValueAddedServiceType",
+              "newParameterName": "valueaddedservicetype"
+            },
+            {
+              "name": "ValueAddedSubServiceType",
+              "newParameterName": "valueaddedsubservicetype"
+            },
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_a_slsordsimlnvaladdedsrvc_for_api_sales_order_simulation_srv",
+      "title": "count_A_SlsOrdSimlnValAddedSrvc_for_api_sales_order_simulation_srv",
+      "description": "Get the total count of entities in the A_SlsOrdSimlnValAddedSrvc collection in the api_sales_order_simulation_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SlsOrdSimlnValAddedSrvc",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorder_in_a_salesordercreditsimulation_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrder_in_A_SalesOrderCreditSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderCreditSimulation to the related A_SalesOrderSimulationType entity via the 'to_SalesOrder' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderCreditSimulation",
+          "navigationProperty": {
+            "name": "to_SalesOrder",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorder_in_a_salesorderitempartnersimln_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrder_in_A_SalesOrderItemPartnerSimln_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderItemPartnerSimln to the related A_SalesOrderSimulationType entity via the 'to_SalesOrder' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemPartnerSimln",
+          "navigationProperty": {
+            "name": "to_SalesOrder",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "PartnerFunction",
+              "newParameterName": "partnerfunction"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorderitem_in_a_salesorderitempartnersimln_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrderItem_in_A_SalesOrderItemPartnerSimln_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderItemPartnerSimln to the related A_SalesOrderItemSimulationType entity via the 'to_SalesOrderItem' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemPartnerSimln",
+          "navigationProperty": {
+            "name": "to_SalesOrderItem",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "PartnerFunction",
+              "newParameterName": "partnerfunction"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_to_partner_in_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "list_to_Partner_in_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderItemSimulation to related A_SalesOrderItemPartnerSimlnType entities via the 'to_Partner' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "navigationProperty": {
+            "name": "to_Partner",
+            "crudOperation": "read",
+            "parameters": [
+              {
+                "name": "filter"
+              },
+              {
+                "name": "select"
+              },
+              {
+                "name": "orderby"
+              },
+              {
+                "name": "top"
+              },
+              {
+                "name": "skip"
+              },
+              {
+                "name": "expand"
+              },
+              {
+                "name": "inlinecount"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_to_partner_in_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "count_to_Partner_in_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Count A_SalesOrderItemPartnerSimlnType entities accessible via the 'to_Partner' navigation property of A_SalesOrderItemSimulation in the api_sales_order_simulation_srv service. Returns the total number of matching entities.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "navigationProperty": {
+            "name": "to_Partner",
+            "crudOperation": "count",
+            "parameters": [
+              {
+                "name": "filter"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_to_pricingelement_in_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "list_to_PricingElement_in_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderItemSimulation to related A_SalesOrderItmPrcgElmntSimlnType entities via the 'to_PricingElement' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "navigationProperty": {
+            "name": "to_PricingElement",
+            "crudOperation": "read",
+            "parameters": [
+              {
+                "name": "filter"
+              },
+              {
+                "name": "select"
+              },
+              {
+                "name": "orderby"
+              },
+              {
+                "name": "top"
+              },
+              {
+                "name": "skip"
+              },
+              {
+                "name": "expand"
+              },
+              {
+                "name": "inlinecount"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_to_pricingelement_in_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "count_to_PricingElement_in_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Count A_SalesOrderItmPrcgElmntSimlnType entities accessible via the 'to_PricingElement' navigation property of A_SalesOrderItemSimulation in the api_sales_order_simulation_srv service. Returns the total number of matching entities.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "navigationProperty": {
+            "name": "to_PricingElement",
+            "crudOperation": "count",
+            "parameters": [
+              {
+                "name": "filter"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorder_in_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrder_in_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderItemSimulation to the related A_SalesOrderSimulationType entity via the 'to_SalesOrder' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "navigationProperty": {
+            "name": "to_SalesOrder",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_to_scheduleline_in_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "list_to_ScheduleLine_in_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderItemSimulation to related A_SalesOrderScheduleLineSimlnType entities via the 'to_ScheduleLine' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "navigationProperty": {
+            "name": "to_ScheduleLine",
+            "crudOperation": "read",
+            "parameters": [
+              {
+                "name": "filter"
+              },
+              {
+                "name": "select"
+              },
+              {
+                "name": "orderby"
+              },
+              {
+                "name": "top"
+              },
+              {
+                "name": "skip"
+              },
+              {
+                "name": "expand"
+              },
+              {
+                "name": "inlinecount"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_to_scheduleline_in_a_salesorderitemsimulation_for_api_sales_order_simulation_srv",
+      "title": "count_to_ScheduleLine_in_A_SalesOrderItemSimulation_for_api_sales_order_simulation_srv",
+      "description": "Count A_SalesOrderScheduleLineSimlnType entities accessible via the 'to_ScheduleLine' navigation property of A_SalesOrderItemSimulation in the api_sales_order_simulation_srv service. Returns the total number of matching entities.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItemSimulation",
+          "navigationProperty": {
+            "name": "to_ScheduleLine",
+            "crudOperation": "count",
+            "parameters": [
+              {
+                "name": "filter"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorder_in_a_salesorderitmprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrder_in_A_SalesOrderItmPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderItmPrcgElmntSimln to the related A_SalesOrderSimulationType entity via the 'to_SalesOrder' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItmPrcgElmntSimln",
+          "navigationProperty": {
+            "name": "to_SalesOrder",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "PricingProcedureStep",
+              "newParameterName": "pricingprocedurestep"
+            },
+            {
+              "name": "PricingProcedureCounter",
+              "newParameterName": "pricingprocedurecounter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorderitem_in_a_salesorderitmprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrderItem_in_A_SalesOrderItmPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderItmPrcgElmntSimln to the related A_SalesOrderItemSimulationType entity via the 'to_SalesOrderItem' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderItmPrcgElmntSimln",
+          "navigationProperty": {
+            "name": "to_SalesOrderItem",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "PricingProcedureStep",
+              "newParameterName": "pricingprocedurestep"
+            },
+            {
+              "name": "PricingProcedureCounter",
+              "newParameterName": "pricingprocedurecounter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorder_in_a_salesorderpartnersimulation_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrder_in_A_SalesOrderPartnerSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderPartnerSimulation to the related A_SalesOrderSimulationType entity via the 'to_SalesOrder' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPartnerSimulation",
+          "navigationProperty": {
+            "name": "to_SalesOrder",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "PartnerFunction",
+              "newParameterName": "partnerfunction"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorder_in_a_salesorderprcgelmntsimln_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrder_in_A_SalesOrderPrcgElmntSimln_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderPrcgElmntSimln to the related A_SalesOrderSimulationType entity via the 'to_SalesOrder' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPrcgElmntSimln",
+          "navigationProperty": {
+            "name": "to_SalesOrder",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "PricingProcedureStep",
+              "newParameterName": "pricingprocedurestep"
+            },
+            {
+              "name": "PricingProcedureCounter",
+              "newParameterName": "pricingprocedurecounter"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorder_in_a_salesorderpricingsimulation_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrder_in_A_SalesOrderPricingSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderPricingSimulation to the related A_SalesOrderSimulationType entity via the 'to_SalesOrder' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderPricingSimulation",
+          "navigationProperty": {
+            "name": "to_SalesOrder",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorder_in_a_salesorderschedulelinesimln_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrder_in_A_SalesOrderScheduleLineSimln_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderScheduleLineSimln to the related A_SalesOrderSimulationType entity via the 'to_SalesOrder' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderScheduleLineSimln",
+          "navigationProperty": {
+            "name": "to_SalesOrder",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "ScheduleLine",
+              "newParameterName": "scheduleline"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_salesorderitem_in_a_salesorderschedulelinesimln_for_api_sales_order_simulation_srv",
+      "title": "get_to_SalesOrderItem_in_A_SalesOrderScheduleLineSimln_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderScheduleLineSimln to the related A_SalesOrderItemSimulationType entity via the 'to_SalesOrderItem' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderScheduleLineSimln",
+          "navigationProperty": {
+            "name": "to_SalesOrderItem",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            },
+            {
+              "name": "SalesOrderItem",
+              "newParameterName": "salesorderitem"
+            },
+            {
+              "name": "ScheduleLine",
+              "newParameterName": "scheduleline"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_credit_in_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "get_to_Credit_in_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderSimulation to the related A_SalesOrderCreditSimulationType entity via the 'to_Credit' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "navigationProperty": {
+            "name": "to_Credit",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_to_item_in_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "list_to_Item_in_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderSimulation to related A_SalesOrderItemSimulationType entities via the 'to_Item' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "navigationProperty": {
+            "name": "to_Item",
+            "crudOperation": "read",
+            "parameters": [
+              {
+                "name": "filter"
+              },
+              {
+                "name": "select"
+              },
+              {
+                "name": "orderby"
+              },
+              {
+                "name": "top"
+              },
+              {
+                "name": "skip"
+              },
+              {
+                "name": "expand"
+              },
+              {
+                "name": "inlinecount"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_to_item_in_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "count_to_Item_in_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Count A_SalesOrderItemSimulationType entities accessible via the 'to_Item' navigation property of A_SalesOrderSimulation in the api_sales_order_simulation_srv service. Returns the total number of matching entities.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "navigationProperty": {
+            "name": "to_Item",
+            "crudOperation": "count",
+            "parameters": [
+              {
+                "name": "filter"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_to_partner_in_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "list_to_Partner_in_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderSimulation to related A_SalesOrderPartnerSimulationType entities via the 'to_Partner' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "navigationProperty": {
+            "name": "to_Partner",
+            "crudOperation": "read",
+            "parameters": [
+              {
+                "name": "filter"
+              },
+              {
+                "name": "select"
+              },
+              {
+                "name": "orderby"
+              },
+              {
+                "name": "top"
+              },
+              {
+                "name": "skip"
+              },
+              {
+                "name": "expand"
+              },
+              {
+                "name": "inlinecount"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_to_partner_in_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "count_to_Partner_in_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Count A_SalesOrderPartnerSimulationType entities accessible via the 'to_Partner' navigation property of A_SalesOrderSimulation in the api_sales_order_simulation_srv service. Returns the total number of matching entities.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "navigationProperty": {
+            "name": "to_Partner",
+            "crudOperation": "count",
+            "parameters": [
+              {
+                "name": "filter"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "get_to_pricing_in_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "get_to_Pricing_in_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderSimulation to the related A_SalesOrderPricingSimulationType entity via the 'to_Pricing' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "navigationProperty": {
+            "name": "to_Pricing",
+            "crudOperation": "readByKey",
+            "parameters": [
+              {
+                "name": "select"
+              },
+              {
+                "name": "expand"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_to_pricingelement_in_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "list_to_PricingElement_in_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Navigate from A_SalesOrderSimulation to related A_SalesOrderPrcgElmntSimlnType entities via the 'to_PricingElement' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_sales_order_simulation_srv tool first to get the metadata.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "navigationProperty": {
+            "name": "to_PricingElement",
+            "crudOperation": "read",
+            "parameters": [
+              {
+                "name": "filter"
+              },
+              {
+                "name": "select"
+              },
+              {
+                "name": "orderby"
+              },
+              {
+                "name": "top"
+              },
+              {
+                "name": "skip"
+              },
+              {
+                "name": "expand"
+              },
+              {
+                "name": "inlinecount"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "count_to_pricingelement_in_a_salesordersimulation_for_api_sales_order_simulation_srv",
+      "title": "count_to_PricingElement_in_A_SalesOrderSimulation_for_api_sales_order_simulation_srv",
+      "description": "Count A_SalesOrderPrcgElmntSimlnType entities accessible via the 'to_PricingElement' navigation property of A_SalesOrderSimulation in the api_sales_order_simulation_srv service. Returns the total number of matching entities.",
+      "odataType": {
+        "entitySet": {
+          "name": "A_SalesOrderSimulation",
+          "navigationProperty": {
+            "name": "to_PricingElement",
+            "crudOperation": "count",
+            "parameters": [
+              {
+                "name": "filter"
+              }
+            ]
+          },
+          "parameters": [
+            {
+              "name": "SalesOrder",
+              "newParameterName": "salesorder"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

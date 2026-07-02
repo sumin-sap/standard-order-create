@@ -1,0 +1,33 @@
+{
+  "ordId": "sap.s4:apiResource:API_SALES_ORDER_SRV:v1",
+  "serverName": "sap.mcp/api_sales_order_srv",
+  "totalTools": 235,
+  "keyTools": {
+    "createSalesOrder": "create_a_salesorder_for_api_sales_order_srv",
+    "getSalesOrder": "get_a_salesorder_for_api_sales_order_srv",
+    "listSalesOrders": "list_a_salesorder_for_api_sales_order_srv",
+    "updateSalesOrder": "patch_a_salesorder_for_api_sales_order_srv",
+    "createSalesOrderItem": "create_a_salesorderitem_for_api_sales_order_srv",
+    "getSalesOrderItem": "get_a_salesorderitem_for_api_sales_order_srv",
+    "listSalesOrderItems": "list_a_salesorderitem_for_api_sales_order_srv",
+    "getMetadata": "get_metadata_api_sales_order_srv",
+    "batch": "batch_for_api_sales_order_srv"
+  },
+  "namingPattern": "<verb>_<snake_case_entity>_for_api_sales_order_srv",
+  "confirmedTools": [
+    "list_a_salesorder_for_api_sales_order_srv",
+    "create_a_salesorder_for_api_sales_order_srv",
+    "get_a_salesorder_for_api_sales_order_srv",
+    "patch_a_salesorder_for_api_sales_order_srv",
+    "delete_a_salesorder_for_api_sales_order_srv",
+    "count_a_salesorder_for_api_sales_order_srv",
+    "list_a_salesorderitem_for_api_sales_order_srv",
+    "create_a_salesorderitem_for_api_sales_order_srv",
+    "get_a_salesorderitem_for_api_sales_order_srv",
+    "patch_a_salesorderitem_for_api_sales_order_srv",
+    "delete_a_salesorderitem_for_api_sales_order_srv",
+    "count_a_salesorderitem_for_api_sales_order_srv",
+    "get_metadata_api_sales_order_srv",
+    "batch_for_api_sales_order_srv"
+  ]
+}

@@ -8,6 +8,14 @@ metadata:
 
 type: agent
 
+requires:
+  - apiResource:
+      ordId: sap.s4:apiResource:API_SALES_ORDER_SRV:v1
+      mcpTranslationFile: ../../specification/standard-order-delivery-block-agent/mcps/API_SALES_ORDER_SRV/translation.json
+  - apiResource:
+      ordId: sap.s4:apiResource:API_SALES_ORDER_SIMULATION_SRV:v1
+      mcpTranslationFile: ../../specification/standard-order-delivery-block-agent/mcps/API_SALES_ORDER_SIMULATION_SRV/translation.json
+
 container:
   buildPath: .
   port: 5000

@@ -45,14 +45,22 @@ async def _create_sales_order(
         from mcp_tools import get_mcp_tools, get_user_token
         tok = get_user_token()
         tools = await get_mcp_tools(tok)
+        # Primary: look for exact MCP tool name from translation.json
+        CREATE_TOOL_NAME = "create_a_salesorder_for_api_sales_order_srv"
         create_tool = None
         for tool in tools:
-            tool_lower = tool.name.lower()
-            if ("sales_order" in tool_lower or "salesorder" in tool_lower) and (
-                "create" in tool_lower or "post" in tool_lower
-            ):
+            if tool.name == CREATE_TOOL_NAME:
                 create_tool = tool
                 break
+        # Fallback: fuzzy match
+        if not create_tool:
+            for tool in tools:
+                tool_lower = tool.name.lower()
+                if ("sales_order" in tool_lower or "salesorder" in tool_lower) and (
+                    "create" in tool_lower or "post" in tool_lower
+                ) and "simulat" not in tool_lower:
+                    create_tool = tool
+                    break
 
         if not create_tool:
             return {
@@ -61,14 +69,15 @@ async def _create_sales_order(
             }
 
         if create_tool:
+            # Use lowercase parameter names as per translation.json newParameterName mappings
             payload = {
-                "SalesOrderType": "OR",
-                "SoldToParty": SoldToParty,
-                "SalesOrganization": SalesOrganization,
-                "DistributionChannel": DistributionChannel,
-                "OrganizationDivision": Division,
-                "PurchaseOrderByCustomer": PurchaseOrderByCustomer,
-                "to_Item": [{
+                "salesordertype": "OR",
+                "soldtoparty": SoldToParty,
+                "salesorganization": SalesOrganization,
+                "distributionchannel": DistributionChannel,
+                "organizationdivision": Division,
+                "purchaseorderbycustomer": PurchaseOrderByCustomer,
+                "to_item": [{
                     "SalesOrderItem": "000010",
                     "Material": Material,
                     "RequestedQuantity": str(RequestedQuantity),

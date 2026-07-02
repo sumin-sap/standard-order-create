@@ -42,20 +42,29 @@ async def _simulate_sales_order(
         from mcp_tools import get_mcp_tools, get_user_token
         tok = get_user_token()
         tools = await get_mcp_tools(tok)
+        # Primary: look for exact MCP tool name from translation.json
+        SIMULATE_TOOL_NAME = "create_a_salesordersimulation_for_api_sales_order_simulation_srv"
         simulate_tool = None
         for tool in tools:
-            if "simulat" in tool.name.lower():
+            if tool.name == SIMULATE_TOOL_NAME:
                 simulate_tool = tool
                 break
+        # Fallback: fuzzy match
+        if not simulate_tool:
+            for tool in tools:
+                if "simulat" in tool.name.lower() and "create" in tool.name.lower():
+                    simulate_tool = tool
+                    break
 
         if simulate_tool:
             payload = {
-                "SalesOrderType": "OR",
-                "SoldToParty": SoldToParty,
-                "SalesOrganization": SalesOrganization,
-                "DistributionChannel": DistributionChannel,
-                "OrganizationDivision": Division,
-                "to_Item": [{
+                "salesordertype": "OR",
+                "soldtoparty": SoldToParty,
+                "salesorganization": SalesOrganization,
+                "distributionchannel": DistributionChannel,
+                "organizationdivision": Division,
+                "requesteddeliverydate": RequestedDeliveryDate,
+                "to_item": [{
                     "SalesOrderItem": "000010",
                     "Material": Material,
                     "RequestedQuantity": str(RequestedQuantity),
